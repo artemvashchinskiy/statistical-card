@@ -1,0 +1,36 @@
+/project
+│
+├─ index.html
+│
+├─ css
+│   ├─ base.css
+│   ├─ layout.css
+│   └─ columns
+│       ├─ left_column.css
+│       ├─ middle_column.css
+│       └─ right_column.css
+│
+├─ js
+│   ├─ main.js
+│   │
+│   ├─ core
+│   │   ├─ columnMap.js
+│   │   ├─ loadHTML.js
+│   │   └─ loadCSS.js
+│   │
+│   ├─ layout
+│   │   ├─ layoutController.js
+│   │   └─ panelController.js
+│   │
+│   ├─ columns
+│   │   ├─ left.js
+│   │   ├─ middle.js
+│   │   └─ right.js
+│   │
+│   └─ utils
+│       └─ breakpoints.js
+│
+└─ columns
+    ├─ left_column.html
+    ├─ middle_column.html
+    └─ right_column.html

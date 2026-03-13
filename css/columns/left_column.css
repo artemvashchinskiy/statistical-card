@@ -1,0 +1,237 @@
+/* left_column.css */ 
+
+.column-left {
+  /*display: none;  hide all columns by default */ 
+  
+  width: 280px;
+  background: var(--card);
+  font-family: var(--font-sans); /* all inside use same font */
+} 
+
+.section-column-left {
+  padding: 20px;
+
+}
+
+
+/* Username */
+
+.icon-heading {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.icon-heading__img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.icon-heading__text {
+  font-size: var(--fs-xl);  /* 24px, same scale token */
+  line-height: 1.1;
+  margin: 0;
+  color: var(--color-text-strong);
+}
+
+/* Switcher  */
+
+.switcher {
+  margin-bottom: 1rem;
+}
+
+/* top switch items */
+.switcher__items {
+  display: flex;
+  gap: 15%;
+  margin-bottom: 0.75rem;
+}
+
+.switcher__item {
+  border: none;
+  background: none;
+  padding: 0;  
+  font-size: var(--fs-lg);      /* 20px */
+  line-height: 1.4;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+
+.switcher__item--active {
+  color: var(--color-text-strong);
+}
+
+/* list below */
+.switcher__list {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.switcher__list-item {
+  font-size: var(--fs-md);      /* 20px to match switch items */
+  line-height: 1.4;
+  color: var(--color-text-strong);
+  margin: .75rem 0;
+  cursor: pointer;
+}
+
+.switcher__list-item::marker {
+  font-size: var(--fs-lg);
+  color: var(--color-text-muted);
+}
+
+/* Dashboards  */
+
+.dashboards {
+  font-family: var(--font-sans);
+}
+
+/* section label */
+.dashboards__title {
+  margin: 0 0 12px;
+  font-size: var(--fs-lg);
+  line-height: 1.2;
+  color: var(--color-text-muted);
+}
+
+/* list reset */
+.dashboards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* one row */
+.dashboards__item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;  
+}
+
+.dashboards__item--overview {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.dashboards__icon--active{
+  margin-left: 25px;
+}
+
+/* icons */
+.dashboards__icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* small left dropdown icon */
+.dashboards__icon--left {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+/* headings inside rows */
+.dashboards__heading {
+  margin: 0;
+  font-size: var(--fs-md);
+  line-height: 1.4;
+  color: var(--color-text-strong);
+  cursor: pointer;
+}
+
+
+/* Pages */
+
+.pages {
+  font-family: var(--font-sans);
+}
+
+.pages__title {
+  margin: 0 0 12px;
+  font-size: var(--fs-lg);
+  line-height: 1.2;
+  color: var(--color-text-muted);
+}
+
+/* main list reset */
+.pages__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* top-level item */
+.pages__item {
+  margin-bottom: 4px;
+}
+
+/* clickable row (icon + text) */
+.pages__toggle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 6px 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* icons */
+.pages__icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.pages__icon--left {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+/* heading text inside row */
+.pages__heading {
+  font-size: var(--fs-md);
+  line-height: 1.4;
+  color: var(--color-text-strong);
+}
+
+/* submenu */
+.pages__list {
+  margin: 4px 0 0 32px; /* indent under icons */
+  padding: 0;
+  list-style: none; 
+}
+
+.pages__list-item {
+  padding: 2px 0;
+  font-size: var(--fs-md);
+  color: var(--color-text-strong);
+  margin: 0 0 10px 25px;
+  cursor: pointer;
+}
+
+/* SnowyUI logo at the bottom */
+
+.snow {
+  margin-top: 250px;
+  width: 180px;          /* w180 */
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* or center/right if you prefer */
+  opacity: 0.8;          /* optional subtle look */
+}
+
+.snow__logo {
+  width: 75px;
+  height: 20px;
+  display: block;
+}

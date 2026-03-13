@@ -1,0 +1,32 @@
+/* base.css */
+
+:root{
+--gap: 0px;
+--max-width: 1600px;
+--bg: #0f1115;
+/* --card: #171a21; */
+--card: #ffffff;
+--text: #e6e9ef;
+--accent: #8be9fd;
+--font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+--color-text-strong: rgba(0, 0, 0, 0.96);
+--color-text-muted: rgba(0, 0, 0, 0.6);
+--fs-xl: 24px;  /* main section title / username */
+--fs-lg: 20px;  /* primary items */
+--fs-md: 16px;  /* secondary items */
+}
+
+h1, h2, h3, h4, h5, h6,
+p, li {
+  margin: 0;
+  font-weight: 400; /* or whatever you use */
+  font-family: var(--font-sans);
+}
+
+body{
+margin:0;
+background:var(--bg);
+color:var(--text);
+font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; 
+/* overflow-x: hidden; */
+}
